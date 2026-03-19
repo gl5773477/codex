@@ -1,0 +1,7 @@
+interface:
+  display_name: "写面评"
+  short_description: "根据简历、面试纪要和历史样例生成统一风格的候选人面评"
+  default_prompt: "Use $write-mianping to draft a concise Chinese interview evaluation from a resume, interview notes, and style examples."
+
+policy:
+  allow_implicit_invocation: true
