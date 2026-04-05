@@ -97,6 +97,8 @@ export const createWorld = (): World => {
           .filter((entry) => entry.q >= 0 && entry.q < HEX_COLUMNS && entry.r >= 0 && entry.r < HEX_ROWS)
           .map((entry) => makeCellId(entry.q, entry.r)),
         wanderSeeds: [rand(q * 3.7 + r), rand(q * 8.4 + r), rand(q * 9.9 + r)],
+        frontlinePressure: 0,
+        recentConflict: 0,
       }
 
       cells.push(cell)

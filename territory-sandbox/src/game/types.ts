@@ -17,6 +17,8 @@ export type HexCell = {
   maxPopulation: number
   neighbors: string[]
   wanderSeeds: number[]
+  frontlinePressure: number
+  recentConflict: number
 }
 
 export type World = {

@@ -69,6 +69,7 @@ export default function App() {
     : null
 
   const landCount = world.cells.filter((cell) => cell.isLand).length
+  const frontlineCount = world.cells.filter((cell) => cell.frontlinePressure >= 0.28).length
   const factionStats = world.factions
     .map((faction) => {
       const cells = world.cells.filter((cell) => cell.ownerId === faction.id)
@@ -114,6 +115,7 @@ export default function App() {
           <h2>世界概况</h2>
           <div className="stat-row"><span>陆地格数</span><strong>{landCount}</strong></div>
           <div className="stat-row"><span>国家数量</span><strong>{world.factions.length}</strong></div>
+          <div className="stat-row"><span>前线格数</span><strong>{frontlineCount}</strong></div>
         </section>
 
         <section className="panel-block">
@@ -125,6 +127,12 @@ export default function App() {
               <div className="stat-row"><span>人口</span><strong>{Math.floor(selectedCell.population)}</strong></div>
               <div className="stat-row"><span>增长</span><strong>{selectedCell.growthRate.toFixed(1)}/s</strong></div>
               <div className="stat-row"><span>上限</span><strong>{selectedCell.maxPopulation}</strong></div>
+              {selectedCell.isLand ? (
+                <>
+                  <div className="stat-row"><span>前线压力</span><strong>{Math.round(selectedCell.frontlinePressure * 100)}%</strong></div>
+                  <div className="stat-row"><span>战火余温</span><strong>{Math.round(selectedCell.recentConflict * 100)}%</strong></div>
+                </>
+              ) : null}
             </>
           ) : (
             <p className="muted">点击地图上的任意格子查看详情。</p>
