@@ -77,9 +77,22 @@ npm run dev
 npm run build
 ```
 
+回归校验：
+
+```bash
+npm run audit:regression
+```
+
+完整检查：
+
+```bash
+npm run check
+```
+
 说明：
 
 - Vite 默认使用 `5173` 端口；如果端口已被占用，会自动切换到下一个可用端口。
+- 已修复过的缺陷台账见 `docs/regression-log.md`；后续每次修 bug 都应补一条对应回归用例。
 
 ## 技术栈
 

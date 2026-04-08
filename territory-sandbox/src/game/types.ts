@@ -4,12 +4,15 @@ export type Faction = {
   color: string
 }
 
+export type TerrainKind = 'sea' | 'plain' | 'ridge' | 'pass'
+
 export type HexCell = {
   id: string
   q: number
   r: number
   x: number
   y: number
+  terrain: TerrainKind
   isLand: boolean
   ownerId: number | null
   population: number
@@ -19,6 +22,23 @@ export type HexCell = {
   wanderSeeds: number[]
   frontlinePressure: number
   recentConflict: number
+  conflictTargetId: string | null
+  conflictMomentum: number
+  conflictProgress: number
+  occupationRecovery: number
+  occupationAnchorId: string | null
+}
+
+export type ReinforcementTransfer = {
+  id: string
+  factionId: number
+  fromCellId: string
+  toCellId: string
+  pathCellIds: string[]
+  currentHop: number
+  amount: number
+  elapsedMs: number
+  durationMs: number
 }
 
 export type World = {
@@ -30,6 +50,10 @@ export type World = {
   factions: Faction[]
   selectedCellId: string | null
   tick: number
+  battleAccumulatorMs: number
+  reinforcements: ReinforcementTransfer[]
+  reinforcementAccumulatorMs: number
+  nextReinforcementId: number
 }
 
 export type SimulationOptions = {
@@ -38,4 +62,22 @@ export type SimulationOptions = {
   attackThreshold: number
   sendRatio: number
   defenseBonus: number
+  passDefenseBonus: number
+  passPressureBonus: number
+  minOccupationGarrison: number
+  occupationRecoverySeconds: number
+  occupationDefenseBonus: number
+  occupationGrowthPenalty: number
+  battleCommitmentScale: number
+  battleDefenseLossScale: number
+  battleAttackerLossScale: number
+  reinforcementIntervalMs: number
+  reinforcementMinDonorPopulation: number
+  reinforcementSendRatio: number
+  reinforcementMinBatch: number
+  reinforcementMaxBatch: number
+  reinforcementTravelMsBase: number
+  reinforcementTravelMsPerStep: number
+  reinforcementMaxIncomingPerTarget: number
+  occupationSupportBatch: number
 }

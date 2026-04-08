@@ -1,6 +1,6 @@
 import { FACTIONS, HEX_COLUMNS, HEX_ROWS, HEX_SIZE } from './constants'
 import { axialToPixel, makeCellId, oddRNeighbors } from './hex'
-import type { HexCell, World } from './types'
+import type { HexCell, TerrainKind, World } from './types'
 
 const rand = (seed: number) => {
   const x = Math.sin(seed * 999.91) * 43758.5453
@@ -22,13 +22,35 @@ const isLandCell = (q: number, r: number, width: number, height: number) => {
   return ellipse < 1.08 + wobble * 0.12
 }
 
+const getTerrain = (q: number, r: number, isLand: boolean): TerrainKind => {
+  if (!isLand) return 'sea'
+
+  const ridgeBands = [
+    { baseQ: HEX_COLUMNS * 0.34, sway: 0.9, phase: 0.8, passRow: 3 },
+    { baseQ: HEX_COLUMNS * 0.63, sway: -0.8, phase: 2.4, passRow: 7 },
+  ]
+
+  for (const band of ridgeBands) {
+    const ridgeQ = band.baseQ + Math.sin((r + band.phase) * 0.8) * band.sway
+    const nearRidge = Math.abs(q - ridgeQ) <= 0.72
+    const nearPass = Math.abs(r - band.passRow) <= 1 && Math.abs(q - ridgeQ) <= 0.96
+    const withinInterior = q > 2 && q < HEX_COLUMNS - 3 && r > 1 && r < HEX_ROWS - 2
+
+    if (withinInterior && nearRidge) {
+      return nearPass ? 'pass' : 'ridge'
+    }
+  }
+
+  return 'plain'
+}
+
 const chooseCapitals = (landCells: HexCell[]) => {
   const picks: HexCell[] = []
   const minDistance = 4
 
   for (const faction of FACTIONS) {
     const candidate = landCells.find((cell) => {
-      if (cell.ownerId !== null) return false
+      if (cell.ownerId !== null || cell.terrain !== 'plain') return false
       return picks.every(
         (picked) =>
           Math.abs(picked.q - cell.q) + Math.abs(picked.r - cell.r) > minDistance,
@@ -80,7 +102,21 @@ export const createWorld = (): World => {
     for (let q = 0; q < HEX_COLUMNS; q += 1) {
       const id = makeCellId(q, r)
       const { x, y } = axialToPixel(q, r, HEX_SIZE)
-      const isLand = isLandCell(q, r, HEX_COLUMNS, HEX_ROWS)
+      const baseLand = isLandCell(q, r, HEX_COLUMNS, HEX_ROWS)
+      const terrain = getTerrain(q, r, baseLand)
+      const isLand = terrain === 'plain' || terrain === 'pass'
+      const fertilitySeed = rand(q * 10 + r)
+      const capacitySeed = rand(q * 11 + r * 3)
+      const growthRate = terrain === 'plain'
+        ? 2.2 + fertilitySeed * 1.2
+        : terrain === 'pass'
+          ? 1.4 + fertilitySeed * 0.65
+          : 0
+      const maxPopulation = terrain === 'plain'
+        ? 70 + Math.floor(capacitySeed * 25)
+        : terrain === 'pass'
+          ? 48 + Math.floor(capacitySeed * 14)
+          : 0
 
       const cell: HexCell = {
         id,
@@ -88,17 +124,23 @@ export const createWorld = (): World => {
         r,
         x: x + 70,
         y: y + 80,
+        terrain,
         isLand,
         ownerId: null,
         population: 0,
-        growthRate: isLand ? 2.2 + rand(q * 10 + r) * 1.2 : 0,
-        maxPopulation: isLand ? 70 + Math.floor(rand(q * 11 + r * 3) * 25) : 0,
+        growthRate,
+        maxPopulation,
         neighbors: oddRNeighbors(q, r)
           .filter((entry) => entry.q >= 0 && entry.q < HEX_COLUMNS && entry.r >= 0 && entry.r < HEX_ROWS)
           .map((entry) => makeCellId(entry.q, entry.r)),
         wanderSeeds: [rand(q * 3.7 + r), rand(q * 8.4 + r), rand(q * 9.9 + r)],
         frontlinePressure: 0,
         recentConflict: 0,
+        conflictTargetId: null,
+        conflictMomentum: 0,
+        conflictProgress: 0,
+        occupationRecovery: 0,
+        occupationAnchorId: null,
       }
 
       cells.push(cell)
@@ -120,5 +162,9 @@ export const createWorld = (): World => {
     factions: FACTIONS,
     selectedCellId: null,
     tick: 0,
+    battleAccumulatorMs: 0,
+    reinforcements: [],
+    reinforcementAccumulatorMs: 0,
+    nextReinforcementId: 1,
   }
 }
