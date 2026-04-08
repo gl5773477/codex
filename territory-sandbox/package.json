@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "audit:regression": "vitest run src/game/regression.test.ts",
+    "check": "npm run build && npm run audit:regression",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.6.2",
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "vitest": "^4.1.2"
   }
 }
