@@ -1,0 +1,10 @@
+{
+  "source_file": "/Users/yanshuai1/Documents/project/AI/baike/data/raw/kaoyan_words.csv",
+  "exported_at": "2026-04-08T11:43:36.214037+00:00",
+  "min_frequency": 40,
+  "row_count": 2444,
+  "notes": [
+    "Derived from exam-data/NETEMVocabulary ranked CSV already stored in data/raw/kaoyan_words.csv.",
+    "The upstream README says the first 2444 words appear at least 40 times in the aggregated exam corpus and are the true high-frequency vocabulary."
+  ]
+}

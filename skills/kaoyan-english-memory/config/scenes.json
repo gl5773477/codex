@@ -1,0 +1,92 @@
+[
+  {
+    "scene_id": "education_learning",
+    "name": "教育与学习",
+    "domain": "education",
+    "anchor_words": ["education", "student", "skill", "training", "knowledge", "memory"]
+  },
+  {
+    "scene_id": "research_science",
+    "name": "研究与科学",
+    "domain": "research",
+    "anchor_words": ["research", "experiment", "evidence", "hypothesis", "analysis", "conclusion"]
+  },
+  {
+    "scene_id": "technology_innovation",
+    "name": "技术与创新",
+    "domain": "technology",
+    "anchor_words": ["technology", "innovation", "device", "digital", "efficiency", "transform"]
+  },
+  {
+    "scene_id": "environment_ecology",
+    "name": "环境与生态",
+    "domain": "environment",
+    "anchor_words": ["environment", "climate", "resource", "pollution", "conservation", "sustainable"]
+  },
+  {
+    "scene_id": "economy_business",
+    "name": "经济与商业",
+    "domain": "economy",
+    "anchor_words": ["market", "consumer", "cost", "profit", "investment", "competition"]
+  },
+  {
+    "scene_id": "public_policy_governance",
+    "name": "政策与治理",
+    "domain": "policy",
+    "anchor_words": ["policy", "regulation", "government", "institution", "implementation", "authority"]
+  },
+  {
+    "scene_id": "society_population",
+    "name": "社会与人口",
+    "domain": "society",
+    "anchor_words": ["society", "population", "urban", "community", "inequality", "migration"]
+  },
+  {
+    "scene_id": "psychology_behavior",
+    "name": "心理与行为",
+    "domain": "psychology",
+    "anchor_words": ["emotion", "motivation", "behavior", "perception", "response", "habit"]
+  },
+  {
+    "scene_id": "culture_history",
+    "name": "文化与历史",
+    "domain": "culture",
+    "anchor_words": ["culture", "tradition", "history", "identity", "value", "heritage"]
+  },
+  {
+    "scene_id": "media_communication",
+    "name": "媒体与传播",
+    "domain": "media",
+    "anchor_words": ["media", "message", "information", "communication", "audience", "influence"]
+  },
+  {
+    "scene_id": "health_medicine",
+    "name": "健康与医疗",
+    "domain": "health",
+    "anchor_words": ["health", "disease", "treatment", "risk", "medicine", "intervention"]
+  },
+  {
+    "scene_id": "work_career_organization",
+    "name": "工作与组织",
+    "domain": "work",
+    "anchor_words": ["career", "organization", "employee", "responsibility", "cooperate", "performance"]
+  },
+  {
+    "scene_id": "plan_attempt_failure",
+    "name": "计划与受阻",
+    "domain": "logic",
+    "anchor_words": ["attempt", "pursue", "obstacle", "suspend", "abandon", "recover"]
+  },
+  {
+    "scene_id": "cause_effect_change",
+    "name": "因果与变化",
+    "domain": "logic",
+    "anchor_words": ["cause", "effect", "change", "alter", "impact", "trend"]
+  },
+  {
+    "scene_id": "comparison_choice_evaluation",
+    "name": "比较与判断",
+    "domain": "logic",
+    "anchor_words": ["compare", "criterion", "evaluate", "advantage", "select", "alternative"]
+  }
+]

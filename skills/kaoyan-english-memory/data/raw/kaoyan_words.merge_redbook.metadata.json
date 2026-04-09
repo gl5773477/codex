@@ -1,0 +1,10 @@
+{
+  "merged_at": "2026-04-08T14:05:15.049391+00:00",
+  "main_input": "/Users/yanshuai1/Documents/project/AI/baike/data/raw/kaoyan_words.csv",
+  "redbook_input": "/Users/yanshuai1/Documents/project/AI/baike/data/raw/kaoyan_redbook_words.json",
+  "output": "/Users/yanshuai1/Documents/project/AI/baike/data/raw/kaoyan_words.csv",
+  "existing_row_count": 5530,
+  "appended_redbook_only_count": 1113,
+  "output_row_count": 6643,
+  "redbook_source_dataset": "3056810551/2027-kaoyan-english-redbook-json"
+}

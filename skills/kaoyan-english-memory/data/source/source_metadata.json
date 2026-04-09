@@ -1,0 +1,8 @@
+{
+  "dataset": "exam-data/NETEMVocabulary",
+  "source_url": "https://raw.githubusercontent.com/exam-data/NETEMVocabulary/master/netem_full_list.json",
+  "license": "CC BY-NC-SA 4.0",
+  "downloaded_at": "2026-04-08T09:31:15.839964+00:00",
+  "row_count": 5530,
+  "root_key": "5530考研词汇词频排序表"
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-04-09",
+  "unit": {
+    "scene_id": "plan_attempt_failure",
+    "title": "尝试与放弃",
+    "core_words": [
+      "attempt",
+      "pursue",
+      "obstacle",
+      "suspend",
+      "abandon"
+    ],
+    "contrast_pairs": [
+      [
+        "abandon",
+        "suspend"
+      ]
+    ],
+    "memory_chain": "设定目标 -> 尝试推进 -> 遇到阻碍 -> 暂停或放弃"
+  },
+  "words": [
+    {
+      "word": "attempt",
+      "meaning": "试图、企图"
+    },
+    {
+      "word": "pursue",
+      "meaning": "追求"
+    },
+    {
+      "word": "obstacle",
+      "meaning": "障碍"
+    },
+    {
+      "word": "suspend",
+      "meaning": "暂停"
+    },
+    {
+      "word": "abandon",
+      "meaning": "抛弃"
+    }
+  ]
+}

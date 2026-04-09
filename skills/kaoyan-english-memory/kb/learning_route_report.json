@@ -1,0 +1,499 @@
+{
+  "total_words": 6641,
+  "route_counts": {
+    "basic": 365,
+    "scene": 833,
+    "contrast": 10,
+    "standard": 5433,
+    "study_total": 6276
+  },
+  "route_samples": {
+    "basic": [
+      {
+        "word_id": "the",
+        "meaning_zh": [
+          "这个、这些"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 1
+      },
+      {
+        "word_id": "be",
+        "meaning_zh": [
+          "是、存在"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 2
+      },
+      {
+        "word_id": "a",
+        "meaning_zh": [
+          "一、每一"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 3
+      },
+      {
+        "word_id": "to",
+        "meaning_zh": [
+          "目的、终点"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 4
+      },
+      {
+        "word_id": "of",
+        "meaning_zh": [
+          "的"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 5
+      },
+      {
+        "word_id": "and",
+        "meaning_zh": [
+          "和"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 6
+      },
+      {
+        "word_id": "in",
+        "meaning_zh": [
+          "在…内"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 7
+      },
+      {
+        "word_id": "have",
+        "meaning_zh": [
+          "有"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 8
+      },
+      {
+        "word_id": "that",
+        "meaning_zh": [
+          "那"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 9
+      },
+      {
+        "word_id": "it",
+        "meaning_zh": [
+          "它"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 10
+      },
+      {
+        "word_id": "for",
+        "meaning_zh": [
+          "为了…、因为…"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 11
+      },
+      {
+        "word_id": "on",
+        "meaning_zh": [
+          "在…上、持续"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 12
+      }
+    ],
+    "scene": [
+      {
+        "word_id": "passage",
+        "meaning_zh": [
+          "段落、通道"
+        ],
+        "scene_tags": [
+          "education_learning"
+        ],
+        "contrast_partners": [],
+        "source_rank": 27
+      },
+      {
+        "word_id": "follow",
+        "meaning_zh": [
+          "跟随"
+        ],
+        "scene_tags": [
+          "cause_effect_change"
+        ],
+        "contrast_partners": [],
+        "source_rank": 54
+      },
+      {
+        "word_id": "section",
+        "meaning_zh": [
+          "部分、地段"
+        ],
+        "scene_tags": [
+          "education_learning"
+        ],
+        "contrast_partners": [],
+        "source_rank": 64
+      },
+      {
+        "word_id": "word",
+        "meaning_zh": [
+          "说话、单词"
+        ],
+        "scene_tags": [
+          "education_learning"
+        ],
+        "contrast_partners": [],
+        "source_rank": 66
+      },
+      {
+        "word_id": "mark",
+        "meaning_zh": [
+          "标记"
+        ],
+        "scene_tags": [
+          "education_learning"
+        ],
+        "contrast_partners": [],
+        "source_rank": 67
+      },
+      {
+        "word_id": "base",
+        "meaning_zh": [
+          "基础、基地"
+        ],
+        "scene_tags": [
+          "cause_effect_change"
+        ],
+        "contrast_partners": [],
+        "source_rank": 80
+      },
+      {
+        "word_id": "way",
+        "meaning_zh": [
+          "方式"
+        ],
+        "scene_tags": [
+          "cause_effect_change"
+        ],
+        "contrast_partners": [],
+        "source_rank": 92
+      },
+      {
+        "word_id": "world",
+        "meaning_zh": [
+          "世界"
+        ],
+        "scene_tags": [
+          "society_population"
+        ],
+        "contrast_partners": [],
+        "source_rank": 102
+      },
+      {
+        "word_id": "choice",
+        "meaning_zh": [
+          "选择"
+        ],
+        "scene_tags": [
+          "comparison_choice_evaluation"
+        ],
+        "contrast_partners": [],
+        "source_rank": 103
+      },
+      {
+        "word_id": "change",
+        "meaning_zh": [
+          "改变"
+        ],
+        "scene_tags": [
+          "cause_effect_change"
+        ],
+        "contrast_partners": [],
+        "source_rank": 104
+      },
+      {
+        "word_id": "study",
+        "meaning_zh": [
+          "学习"
+        ],
+        "scene_tags": [
+          "education_learning"
+        ],
+        "contrast_partners": [],
+        "source_rank": 109
+      },
+      {
+        "word_id": "job",
+        "meaning_zh": [
+          "工作"
+        ],
+        "scene_tags": [
+          "economy_business",
+          "work_career_organization"
+        ],
+        "contrast_partners": [],
+        "source_rank": 114
+      }
+    ],
+    "contrast": [
+      {
+        "word_id": "economic",
+        "meaning_zh": [
+          "经济上的"
+        ],
+        "scene_tags": [
+          "economy_business"
+        ],
+        "contrast_partners": [
+          "economical"
+        ],
+        "source_rank": 252
+      },
+      {
+        "word_id": "effect",
+        "meaning_zh": [
+          "效果"
+        ],
+        "scene_tags": [
+          "cause_effect_change"
+        ],
+        "contrast_partners": [
+          "affect"
+        ],
+        "source_rank": 267
+      },
+      {
+        "word_id": "affect",
+        "meaning_zh": [
+          "影响"
+        ],
+        "scene_tags": [
+          "cause_effect_change"
+        ],
+        "contrast_partners": [
+          "effect"
+        ],
+        "source_rank": 545
+      },
+      {
+        "word_id": "ensure",
+        "meaning_zh": [
+          "确保"
+        ],
+        "scene_tags": [
+          "comparison_choice_evaluation"
+        ],
+        "contrast_partners": [
+          "assure"
+        ],
+        "source_rank": 927
+      },
+      {
+        "word_id": "adapt",
+        "meaning_zh": [
+          "改编、适应"
+        ],
+        "scene_tags": [
+          "comparison_choice_evaluation"
+        ],
+        "contrast_partners": [
+          "adopt"
+        ],
+        "source_rank": 1026
+      },
+      {
+        "word_id": "adopt",
+        "meaning_zh": [
+          "采用、收养"
+        ],
+        "scene_tags": [
+          "comparison_choice_evaluation"
+        ],
+        "contrast_partners": [
+          "adapt"
+        ],
+        "source_rank": 1049
+      },
+      {
+        "word_id": "abandon",
+        "meaning_zh": [
+          "抛弃"
+        ],
+        "scene_tags": [
+          "plan_attempt_failure"
+        ],
+        "contrast_partners": [
+          "suspend"
+        ],
+        "source_rank": 1511
+      },
+      {
+        "word_id": "assure",
+        "meaning_zh": [
+          "使确信、担保"
+        ],
+        "scene_tags": [
+          "comparison_choice_evaluation"
+        ],
+        "contrast_partners": [
+          "ensure"
+        ],
+        "source_rank": 2190
+      },
+      {
+        "word_id": "suspend",
+        "meaning_zh": [
+          "暂停"
+        ],
+        "scene_tags": [
+          "plan_attempt_failure"
+        ],
+        "contrast_partners": [
+          "abandon"
+        ],
+        "source_rank": 2662
+      },
+      {
+        "word_id": "economical",
+        "meaning_zh": [
+          "经济的"
+        ],
+        "scene_tags": [
+          "economy_business"
+        ],
+        "contrast_partners": [
+          "economic"
+        ],
+        "source_rank": 3810
+      }
+    ],
+    "standard": [
+      {
+        "word_id": "into",
+        "meaning_zh": [
+          "进入内部"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 93
+      },
+      {
+        "word_id": "sheet",
+        "meaning_zh": [
+          "被单、（一）张、纸"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 95
+      },
+      {
+        "word_id": "direction",
+        "meaning_zh": [
+          "方向、指令"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 105
+      },
+      {
+        "word_id": "blank",
+        "meaning_zh": [
+          "空白的、失色的"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 204
+      },
+      {
+        "word_id": "centre",
+        "meaning_zh": [
+          "中心、中央"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 230
+      },
+      {
+        "word_id": "early",
+        "meaning_zh": [
+          "早期的"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 257
+      },
+      {
+        "word_id": "spend",
+        "meaning_zh": [
+          "花"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 259
+      },
+      {
+        "word_id": "something",
+        "meaning_zh": [
+          "某事"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 272
+      },
+      {
+        "word_id": "since",
+        "meaning_zh": [
+          "自从、因为、既然"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 289
+      },
+      {
+        "word_id": "however",
+        "meaning_zh": [
+          "但是、然而"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 290
+      },
+      {
+        "word_id": "whether",
+        "meaning_zh": [
+          "是否"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 294
+      },
+      {
+        "word_id": "yet",
+        "meaning_zh": [
+          "然而"
+        ],
+        "scene_tags": [],
+        "contrast_partners": [],
+        "source_rank": 312
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "education_learning": {
+    "word_keywords": ["education", "student", "teacher", "school", "college", "university", "learn", "study", "academic", "curriculum", "classroom", "knowledge", "skill", "training", "course", "campus", "degree", "exam", "examination", "paragraph", "passage", "author", "text", "word", "mark", "read", "write", "question", "answer", "language", "section", "comprehension", "understand", "sentence", "professor", "subject", "focus"],
+    "meaning_keywords": ["教育", "学习", "学校", "学生", "教师", "课程", "训练", "知识", "技能", "大学", "学院", "考试", "段落", "文章", "阅读", "写作", "作者", "文本", "语言", "问题", "回答", "分数", "标记", "理解", "句子", "教授", "科目", "专注"]
+  },
+  "research_science": {
+    "word_keywords": ["research", "science", "scientific", "experiment", "evidence", "analysis", "method", "conclusion", "hypothesis", "theory", "data", "observe", "observation", "test", "laboratory", "statistics", "statistical", "qualitative", "quantitative", "sample", "variable", "report", "measure", "design", "process"],
+    "meaning_keywords": ["研究", "科学", "实验", "证据", "分析", "方法", "结论", "理论", "数据", "观察", "测试", "统计", "实验室", "定量", "定性", "变量", "报告", "衡量", "测量", "设计", "过程"]
+  },
+  "technology_innovation": {
+    "word_keywords": ["technology", "technical", "innovation", "innovative", "digital", "computer", "internet", "online", "electronic", "device", "software", "hardware", "automation", "automate", "television", "email", "system", "design", "process", "product"],
+    "meaning_keywords": ["技术", "创新", "数字", "电子", "计算机", "网络", "互联网", "自动化", "设备", "电视", "邮件", "软件", "硬件", "系统", "设计", "过程", "产品"]
+  },
+  "environment_ecology": {
+    "word_keywords": ["environment", "environmental", "ecology", "ecological", "climate", "resource", "pollution", "conservation", "sustainable", "species", "wildlife", "habitat", "energy", "green"],
+    "meaning_keywords": ["环境", "生态", "气候", "资源", "污染", "保护", "可持续", "物种", "野生", "能源", "绿色"]
+  },
+  "economy_business": {
+    "word_keywords": ["economy", "economic", "economical", "business", "market", "company", "industry", "industrial", "consumer", "consumption", "price", "cost", "profit", "income", "labor", "trade", "finance", "financial", "commercial", "job", "product", "customer", "benefit", "quality", "develop"],
+    "meaning_keywords": ["经济", "商业", "市场", "公司", "产业", "工业", "消费", "价格", "成本", "利润", "收入", "劳动", "贸易", "金融", "工作", "就业", "产品", "顾客", "好处", "收益", "质量", "发展"]
+  },
+  "public_policy_governance": {
+    "word_keywords": ["policy", "political", "politics", "government", "govern", "regulation", "legal", "law", "institution", "public", "authority", "state", "defense", "require", "system", "control", "measure", "order", "support"],
+    "meaning_keywords": ["政策", "政治", "政府", "治理", "规章", "法规", "法律", "制度", "公共", "国家", "权威", "国防", "要求", "系统", "控制", "措施", "秩序", "支持"]
+  },
+  "society_population": {
+    "word_keywords": ["society", "social", "population", "community", "family", "parent", "human", "people", "country", "world", "neighborhood"],
+    "meaning_keywords": ["社会", "人口", "社区", "家庭", "父母", "人类", "人民", "国家", "世界", "社区"]
+  },
+  "psychology_behavior": {
+    "word_keywords": ["psychology", "psychological", "behavior", "behaviour", "emotion", "emotional", "motivation", "habit", "mental", "mind", "perception", "attitude", "respond", "response", "believe", "experience", "expect", "attention", "stress", "focus", "likely", "possible"],
+    "meaning_keywords": ["心理", "行为", "情绪", "动机", "习惯", "精神", "感知", "态度", "反应", "相信", "经历", "预期", "注意", "压力", "专注", "可能"]
+  },
+  "culture_history": {
+    "word_keywords": ["culture", "cultural", "history", "historical", "tradition", "traditional", "civilization", "civilisation", "religion", "religious", "art", "literature"],
+    "meaning_keywords": ["文化", "历史", "传统", "文明", "宗教", "艺术", "文学"]
+  },
+  "media_communication": {
+    "word_keywords": ["media", "communication", "communicate", "message", "information", "journal", "journalism", "newspaper", "press", "news", "conversation", "dialog", "dialogue", "language", "text", "report", "suggest", "view"],
+    "meaning_keywords": ["媒体", "传播", "交流", "沟通", "信息", "新闻", "报纸", "对话", "语言", "文本", "报告", "建议", "观点"]
+  },
+  "health_medicine": {
+    "word_keywords": ["health", "medical", "medicine", "disease", "patient", "hospital", "doctor", "treatment", "virus", "biology", "physical", "physics"],
+    "meaning_keywords": ["健康", "医疗", "医学", "疾病", "病人", "医院", "治疗", "病毒", "生物", "物理"]
+  },
+  "work_career_organization": {
+    "word_keywords": ["work", "career", "professional", "organization", "organisation", "employee", "employer", "management", "manage", "task", "responsibility", "team", "office", "role", "system", "process", "support", "control"],
+    "meaning_keywords": ["工作", "职业", "专业", "组织", "管理", "任务", "责任", "团队", "办公室", "角色", "系统", "过程", "支持", "控制"]
+  },
+  "plan_attempt_failure": {
+    "word_keywords": ["attempt", "try", "pursue", "obstacle", "difficulty", "failure", "fail", "suspend", "abandon", "goal", "plan", "project", "provide", "accord", "correspond"],
+    "meaning_keywords": ["尝试", "努力", "追求", "障碍", "困难", "失败", "暂停", "放弃", "目标", "计划", "项目", "符合", "一致", "提供"]
+  },
+  "cause_effect_change": {
+    "word_keywords": ["cause", "effect", "affect", "impact", "result", "consequence", "alter", "change", "increase", "decrease", "improve", "lead", "produce", "become", "different", "follow", "base", "way", "mean", "increase", "develop", "process", "create", "bring", "form", "major", "recent"],
+    "meaning_keywords": ["原因", "结果", "影响", "后果", "改变", "变化", "增加", "减少", "提高", "导致", "产生", "成为", "不同", "基础", "方式", "意味着", "发展", "过程", "创造", "带来", "形成", "主要", "近期"]
+  },
+  "comparison_choice_evaluation": {
+    "word_keywords": ["compare", "comparison", "criterion", "evaluate", "evaluation", "advantage", "disadvantage", "choice", "choose", "select", "option", "standard", "prefer", "value", "less", "more", "best", "better", "worse", "important", "benefit", "decide", "decision", "consider", "quality", "possible", "rate", "ability"],
+    "meaning_keywords": ["比较", "评价", "评估", "标准", "优势", "劣势", "选择", "优先", "更少", "更多", "更好", "更坏", "价值", "重要", "好处", "决定", "决议", "考虑", "质量", "可能", "比率", "能力"]
+  }
+}

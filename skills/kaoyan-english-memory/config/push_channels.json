@@ -1,0 +1,16 @@
+{
+  "channels": [
+    {
+      "channel_id": "slack_default",
+      "type": "slack_webhook",
+      "enabled": false,
+      "webhook_env": "SLACK_WEBHOOK_URL"
+    },
+    {
+      "channel_id": "wecom_default",
+      "type": "wecom_webhook",
+      "enabled": false,
+      "webhook_env": "WECOM_WEBHOOK_URL"
+    }
+  ]
+}

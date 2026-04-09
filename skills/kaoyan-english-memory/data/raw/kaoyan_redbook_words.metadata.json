@@ -1,0 +1,12 @@
+{
+  "dataset": "3056810551/2027-kaoyan-english-redbook-json",
+  "source_url": "https://raw.githubusercontent.com/3056810551/2027-kaoyan-english-redbook-json/main/words.json",
+  "downloaded_at": "2026-04-08T11:43:37.842333+00:00",
+  "row_count": 6550,
+  "data_shape": "list[page,index,word,meaning]",
+  "notes": [
+    "Repository README states the JSON was extracted from a circulated 2027 redbook PDF.",
+    "Repository includes an MIT license file, but README also says the project is for learning exchange and not commercial use.",
+    "Review source licensing and downstream usage before redistribution."
+  ]
+}

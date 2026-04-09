@@ -1,0 +1,194 @@
+{
+  "date": "2026-04-09",
+  "progress": {
+    "study_total": 6276,
+    "introduced_before": 0,
+    "introduced_after": 18,
+    "remaining_after": 6258
+  },
+  "plan": {
+    "scene_units": [
+      {
+        "unit_id": "u001",
+        "scene_id": "plan_attempt_failure",
+        "title": "尝试与放弃",
+        "memory_chain": "设定目标 -> 尝试推进 -> 遇到阻碍 -> 暂停或放弃",
+        "difficulty": 3,
+        "core_words": [
+          {
+            "word": "attempt",
+            "meaning": "试图、企图",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "pursue",
+            "meaning": "追求",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "obstacle",
+            "meaning": "障碍",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "suspend",
+            "meaning": "暂停",
+            "learning_mode": "contrast",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "abandon",
+            "meaning": "抛弃",
+            "learning_mode": "contrast",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          }
+        ],
+        "support_words": [
+          {
+            "word": "goal",
+            "meaning": "目标",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "effort",
+            "meaning": "努力",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "difficulty",
+            "meaning": "困难",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "failure",
+            "meaning": "失败",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "recover",
+            "meaning": "恢复",
+            "learning_mode": "scene",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          }
+        ]
+      }
+    ],
+    "contrast_pairs": [
+      {
+        "pair_id": "abandon|suspend",
+        "words": [
+          {
+            "word": "abandon",
+            "meaning": "抛弃",
+            "learning_mode": "contrast",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          },
+          {
+            "word": "suspend",
+            "meaning": "暂停",
+            "learning_mode": "contrast",
+            "scene_tags": [
+              "plan_attempt_failure"
+            ]
+          }
+        ]
+      }
+    ],
+    "extra_words": [
+      {
+        "word": "passage",
+        "meaning": "段落、通道",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "education_learning"
+        ]
+      },
+      {
+        "word": "follow",
+        "meaning": "跟随",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "cause_effect_change"
+        ]
+      },
+      {
+        "word": "section",
+        "meaning": "部分、地段",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "education_learning"
+        ]
+      },
+      {
+        "word": "word",
+        "meaning": "说话、单词",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "education_learning"
+        ]
+      },
+      {
+        "word": "mark",
+        "meaning": "标记",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "education_learning"
+        ]
+      },
+      {
+        "word": "base",
+        "meaning": "基础、基地",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "cause_effect_change"
+        ]
+      },
+      {
+        "word": "way",
+        "meaning": "方式",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "cause_effect_change"
+        ]
+      },
+      {
+        "word": "world",
+        "meaning": "世界",
+        "learning_mode": "scene",
+        "scene_tags": [
+          "society_population"
+        ]
+      }
+    ],
+    "review_words": []
+  }
+}

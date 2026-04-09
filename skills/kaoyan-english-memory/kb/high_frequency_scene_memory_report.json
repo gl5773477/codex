@@ -1,0 +1,517 @@
+{
+  "input_file": "/Users/yanshuai1/Documents/project/AI/codex/skills/kaoyan-english-memory/data/raw/kaoyan_core_high_frequency_words.csv",
+  "high_frequency_threshold": 40,
+  "total_words": 2444,
+  "basic_words": 318,
+  "learning_words": 2126,
+  "matched_total_words": 463,
+  "matched_learning_words": 445,
+  "learning_scene_coverage_ratio": 0.2093,
+  "scene_counts": {
+    "cause_effect_change": 73,
+    "comparison_choice_evaluation": 64,
+    "education_learning": 61,
+    "society_population": 18,
+    "economy_business": 43,
+    "work_career_organization": 30,
+    "psychology_behavior": 44,
+    "media_communication": 26,
+    "public_policy_governance": 29,
+    "plan_attempt_failure": 35,
+    "technology_innovation": 29,
+    "research_science": 31,
+    "health_medicine": 15,
+    "culture_history": 16,
+    "environment_ecology": 12
+  },
+  "valid_unit_count": 12,
+  "complete_unit_count": 7,
+  "unit_summary": [
+    {
+      "scene_id": "plan_attempt_failure",
+      "title": "尝试与放弃",
+      "available_core_words": [
+        "attempt",
+        "pursue",
+        "obstacle",
+        "abandon"
+      ],
+      "available_support_words": [
+        "goal",
+        "effort",
+        "difficulty",
+        "failure",
+        "recover"
+      ],
+      "core_word_count": 4,
+      "is_valid_unit": true,
+      "is_complete_unit": false
+    },
+    {
+      "scene_id": "cause_effect_change",
+      "title": "原因与影响",
+      "available_core_words": [
+        "cause",
+        "result",
+        "alter",
+        "impact",
+        "consequence"
+      ],
+      "available_support_words": [
+        "trend",
+        "develop",
+        "process",
+        "produce",
+        "affect"
+      ],
+      "core_word_count": 5,
+      "is_valid_unit": true,
+      "is_complete_unit": true
+    },
+    {
+      "scene_id": "comparison_choice_evaluation",
+      "title": "比较与选择",
+      "available_core_words": [
+        "compare",
+        "evaluate",
+        "advantage",
+        "select"
+      ],
+      "available_support_words": [
+        "important",
+        "benefit",
+        "decide",
+        "decision",
+        "consider"
+      ],
+      "core_word_count": 4,
+      "is_valid_unit": true,
+      "is_complete_unit": false
+    },
+    {
+      "scene_id": "research_science",
+      "title": "研究推理链",
+      "available_core_words": [
+        "evidence",
+        "analysis",
+        "method",
+        "conclusion"
+      ],
+      "available_support_words": [
+        "report",
+        "measure",
+        "design",
+        "theory",
+        "observe"
+      ],
+      "core_word_count": 4,
+      "is_valid_unit": true,
+      "is_complete_unit": false
+    },
+    {
+      "scene_id": "education_learning",
+      "title": "阅读与理解",
+      "available_core_words": [
+        "study",
+        "language",
+        "passage",
+        "comprehension",
+        "understand"
+      ],
+      "available_support_words": [
+        "learn",
+        "paragraph",
+        "sentence",
+        "focus",
+        "professor"
+      ],
+      "core_word_count": 5,
+      "is_valid_unit": true,
+      "is_complete_unit": true
+    },
+    {
+      "scene_id": "economy_business",
+      "title": "市场与产品",
+      "available_core_words": [
+        "economy",
+        "business",
+        "market",
+        "product",
+        "profit"
+      ],
+      "available_support_words": [
+        "company",
+        "industry",
+        "customer",
+        "cost",
+        "trade"
+      ],
+      "core_word_count": 5,
+      "is_valid_unit": true,
+      "is_complete_unit": true
+    },
+    {
+      "scene_id": "public_policy_governance",
+      "title": "政策与执行",
+      "available_core_words": [
+        "policy",
+        "government",
+        "public",
+        "law"
+      ],
+      "available_support_words": [
+        "political",
+        "require",
+        "system",
+        "control",
+        "measure"
+      ],
+      "core_word_count": 4,
+      "is_valid_unit": true,
+      "is_complete_unit": false
+    },
+    {
+      "scene_id": "media_communication",
+      "title": "信息与报道",
+      "available_core_words": [
+        "information",
+        "message",
+        "news",
+        "press",
+        "report"
+      ],
+      "available_support_words": [
+        "communicate",
+        "language",
+        "suggest",
+        "view",
+        "focus"
+      ],
+      "core_word_count": 5,
+      "is_valid_unit": true,
+      "is_complete_unit": true
+    },
+    {
+      "scene_id": "work_career_organization",
+      "title": "组织与协作",
+      "available_core_words": [
+        "management",
+        "employee",
+        "responsibility",
+        "task"
+      ],
+      "available_support_words": [
+        "employer",
+        "team",
+        "office",
+        "role",
+        "system"
+      ],
+      "core_word_count": 4,
+      "is_valid_unit": true,
+      "is_complete_unit": false
+    },
+    {
+      "scene_id": "psychology_behavior",
+      "title": "经历与预期",
+      "available_core_words": [
+        "experience",
+        "believe",
+        "attention",
+        "stress",
+        "expect"
+      ],
+      "available_support_words": [
+        "focus",
+        "likely",
+        "possible",
+        "individual",
+        "success"
+      ],
+      "core_word_count": 5,
+      "is_valid_unit": true,
+      "is_complete_unit": true
+    },
+    {
+      "scene_id": "technology_innovation",
+      "title": "系统与技术",
+      "available_core_words": [
+        "technology",
+        "innovation",
+        "system",
+        "design",
+        "device"
+      ],
+      "available_support_words": [
+        "digital",
+        "develop",
+        "information",
+        "process",
+        "product"
+      ],
+      "core_word_count": 5,
+      "is_valid_unit": true,
+      "is_complete_unit": true
+    },
+    {
+      "scene_id": "environment_ecology",
+      "title": "环境与资源",
+      "available_core_words": [
+        "environment",
+        "climate",
+        "resource",
+        "pollution",
+        "energy"
+      ],
+      "available_support_words": [
+        "conservation"
+      ],
+      "core_word_count": 5,
+      "is_valid_unit": true,
+      "is_complete_unit": true
+    }
+  ],
+  "learning_unmatched_samples": [
+    {
+      "word_id": "into",
+      "meaning_zh": [
+        "进入内部"
+      ],
+      "frequency": 2016,
+      "source_rank": 93
+    },
+    {
+      "word_id": "sheet",
+      "meaning_zh": [
+        "被单、（一）张、纸"
+      ],
+      "frequency": 1929,
+      "source_rank": 95
+    },
+    {
+      "word_id": "direction",
+      "meaning_zh": [
+        "方向、指令"
+      ],
+      "frequency": 1778,
+      "source_rank": 105
+    },
+    {
+      "word_id": "blank",
+      "meaning_zh": [
+        "空白的、失色的"
+      ],
+      "frequency": 866,
+      "source_rank": 204
+    },
+    {
+      "word_id": "centre",
+      "meaning_zh": [
+        "中心、中央"
+      ],
+      "frequency": 782,
+      "source_rank": 230
+    },
+    {
+      "word_id": "early",
+      "meaning_zh": [
+        "早期的"
+      ],
+      "frequency": 704,
+      "source_rank": 257
+    },
+    {
+      "word_id": "spend",
+      "meaning_zh": [
+        "花"
+      ],
+      "frequency": 689,
+      "source_rank": 259
+    },
+    {
+      "word_id": "something",
+      "meaning_zh": [
+        "某事"
+      ],
+      "frequency": 662,
+      "source_rank": 272
+    },
+    {
+      "word_id": "since",
+      "meaning_zh": [
+        "自从、因为、既然"
+      ],
+      "frequency": 622,
+      "source_rank": 289
+    },
+    {
+      "word_id": "however",
+      "meaning_zh": [
+        "但是、然而"
+      ],
+      "frequency": 621,
+      "source_rank": 290
+    },
+    {
+      "word_id": "whether",
+      "meaning_zh": [
+        "是否"
+      ],
+      "frequency": 615,
+      "source_rank": 294
+    },
+    {
+      "word_id": "yet",
+      "meaning_zh": [
+        "然而"
+      ],
+      "frequency": 587,
+      "source_rank": 312
+    },
+    {
+      "word_id": "include",
+      "meaning_zh": [
+        "包括"
+      ],
+      "frequency": 582,
+      "source_rank": 314
+    },
+    {
+      "word_id": "rather",
+      "meaning_zh": [
+        "相当的"
+      ],
+      "frequency": 581,
+      "source_rank": 316
+    },
+    {
+      "word_id": "century",
+      "meaning_zh": [
+        "世纪"
+      ],
+      "frequency": 577,
+      "source_rank": 319
+    },
+    {
+      "word_id": "power",
+      "meaning_zh": [
+        "力、功率"
+      ],
+      "frequency": 547,
+      "source_rank": 334
+    },
+    {
+      "word_id": "term",
+      "meaning_zh": [
+        "条款、期限"
+      ],
+      "frequency": 497,
+      "source_rank": 359
+    },
+    {
+      "word_id": "complete",
+      "meaning_zh": [
+        "完全地"
+      ],
+      "frequency": 488,
+      "source_rank": 370
+    },
+    {
+      "word_id": "present",
+      "meaning_zh": [
+        "呈现、提出、礼物、现在"
+      ],
+      "frequency": 474,
+      "source_rank": 380
+    },
+    {
+      "word_id": "tend",
+      "meaning_zh": [
+        "趋向于、照料"
+      ],
+      "frequency": 469,
+      "source_rank": 384
+    },
+    {
+      "word_id": "percent",
+      "meaning_zh": [
+        "百分之的"
+      ],
+      "frequency": 454,
+      "source_rank": 395
+    },
+    {
+      "word_id": "sleep",
+      "meaning_zh": [
+        "睡眠"
+      ],
+      "frequency": 454,
+      "source_rank": 396
+    },
+    {
+      "word_id": "poor",
+      "meaning_zh": [
+        "贫穷的、可怜的、糟糕的"
+      ],
+      "frequency": 445,
+      "source_rank": 401
+    },
+    {
+      "word_id": "free",
+      "meaning_zh": [
+        "自由的"
+      ],
+      "frequency": 445,
+      "source_rank": 402
+    },
+    {
+      "word_id": "though",
+      "meaning_zh": [
+        "尽管"
+      ],
+      "frequency": 435,
+      "source_rank": 411
+    },
+    {
+      "word_id": "real",
+      "meaning_zh": [
+        "真的"
+      ],
+      "frequency": 426,
+      "source_rank": 416
+    },
+    {
+      "word_id": "almost",
+      "meaning_zh": [
+        "几乎"
+      ],
+      "frequency": 425,
+      "source_rank": 417
+    },
+    {
+      "word_id": "ago",
+      "meaning_zh": [
+        "以前"
+      ],
+      "frequency": 422,
+      "source_rank": 420
+    },
+    {
+      "word_id": "local",
+      "meaning_zh": [
+        "当地的"
+      ],
+      "frequency": 419,
+      "source_rank": 422
+    },
+    {
+      "word_id": "really",
+      "meaning_zh": [
+        "确实"
+      ],
+      "frequency": 418,
+      "source_rank": 423
+    }
+  ],
+  "assessment": "usable_but_needs_more_scene_rules"
+}
