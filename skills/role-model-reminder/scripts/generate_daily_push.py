@@ -1,10 +1,25 @@
 import argparse
 import hashlib
 import json
+import sys
 from datetime import date
 from pathlib import Path
 
-from common import PUSH_HISTORY_PATH, REMINDER_CANDIDATES_PATH, read_jsonl, write_json
+from build_reminders import build_candidates
+from common import (
+    CURATED_MATERIALS_PATH,
+    INBOX_DIR,
+    MATERIAL_COVERAGE_PATH,
+    PEOPLE_PATH,
+    PUSH_HISTORY_PATH,
+    REMINDER_CANDIDATES_PATH,
+    SEED_MATERIALS_PATH,
+    read_jsonl,
+    load_json,
+    write_json,
+    write_jsonl,
+)
+from refresh_materials import build_coverage, collect_materials
 
 
 def parse_args() -> argparse.Namespace:
@@ -90,11 +105,31 @@ def update_history(history: dict, candidate: dict, target_date: str) -> dict:
     return {"entries": entries}
 
 
+def ensure_candidates(path: Path) -> list[dict]:
+    candidates = read_jsonl(path)
+    if candidates:
+        return candidates
+
+    people = load_json(PEOPLE_PATH)
+    materials = collect_materials(SEED_MATERIALS_PATH, INBOX_DIR)
+    coverage = build_coverage(materials, people)
+    candidates = build_candidates(materials)
+
+    write_json(CURATED_MATERIALS_PATH, materials)
+    write_json(MATERIAL_COVERAGE_PATH, coverage)
+    write_jsonl(path, candidates)
+    print(
+        f"Bootstrapped {len(candidates)} reminder candidates from seed and inbox materials.",
+        file=sys.stderr,
+    )
+    return candidates
+
+
 def main() -> None:
     args = parse_args()
-    candidates = read_jsonl(args.candidates)
+    candidates = ensure_candidates(args.candidates)
     if not candidates:
-        raise ValueError("No reminder candidates found. Run refresh_materials.py and build_reminders.py first.")
+        raise ValueError("No reminder candidates found after bootstrap. Check seed and inbox materials.")
 
     history = load_history(args.history)
     candidate = choose_candidate(candidates, history, args.target_date, args.window)
@@ -113,7 +148,7 @@ def main() -> None:
             "story_vignette": candidate.get("story_vignette", ""),
             "reflection_question": candidate["reflection_question"],
             "tags": candidate["tags"],
-            "reminder_id": candidate["reminder_id"]
+            "reminder_id": candidate["reminder_id"],
         }
         text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     else:

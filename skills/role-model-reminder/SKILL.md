@@ -17,9 +17,9 @@ Use this skill for two recurring jobs:
 - `config/people.json`: tracked figures, themes, and target coverage
 - `data/seed/materials.json`: stable seed materials
 - `data/inbox/*.json`: newly collected materials waiting to be merged
-- `data/curated/materials.json`: merged, deduplicated material library
-- `kb/material_coverage.json`: coverage report by figure and tag
-- `kb/reminder_candidates.jsonl`: derived reminder candidates for daily delivery
+- `data/curated/materials.json`: merged, deduplicated material library, generated if missing
+- `kb/material_coverage.json`: coverage report by figure and tag, generated if missing
+- `kb/reminder_candidates.jsonl`: derived reminder candidates for daily delivery, generated if missing
 - `data/state/push_history.json`: delivery history
 - `scripts/refresh_materials.py`: validate, merge, dedupe, and report coverage
 - `scripts/build_reminders.py`: turn curated materials into reminder candidates
@@ -66,6 +66,8 @@ python3 scripts/generate_daily_push.py --update-history
 ```
 
 The output is already suitable for an inbox item or chat push. Keep this output shape:
+
+If `data/curated/materials.json`, `kb/material_coverage.json`, or `kb/reminder_candidates.jsonl` are missing, the script will rebuild them from `data/seed/` and `data/inbox/` before rendering the daily push.
 
 - `一句提醒`
 - `-- 人物`
