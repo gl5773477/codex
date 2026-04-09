@@ -1,0 +1,141 @@
+{
+  "material_count": 21,
+  "counts_by_person": {
+    "ding-yuanying": 3,
+    "huang-xuhua": 3,
+    "inamori-kazuo": 3,
+    "juror-8": 3,
+    "mei-changsu": 3,
+    "nan-rendong": 3,
+    "zeng-guofan": 3
+  },
+  "counts_by_tag": {
+    "代价意识": 1,
+    "价值感": 1,
+    "修身": 2,
+    "做人准则": 2,
+    "克制": 4,
+    "全局感": 2,
+    "全局推演": 3,
+    "去幻觉": 2,
+    "工程思维": 2,
+    "慢结论": 2,
+    "执行力": 1,
+    "担当": 3,
+    "持续改进": 2,
+    "提问能力": 1,
+    "校验意识": 1,
+    "次序感": 4,
+    "独立判断": 3,
+    "现实感": 3,
+    "笨功夫": 1,
+    "系统工程": 2,
+    "约束识别": 1,
+    "纪律": 1,
+    "经营判断": 2,
+    "结构思维": 2,
+    "耐心": 3,
+    "自省": 2,
+    "规律感": 2,
+    "证据意识": 3,
+    "长期主义": 4,
+    "隐忍": 1
+  },
+  "counts_by_type": {
+    "story": 10,
+    "thought": 11
+  },
+  "people_status": [
+    {
+      "person_id": "zeng-guofan",
+      "person_name": "曾国藩",
+      "count": 3,
+      "target_material_count": 3,
+      "gap": 0,
+      "themes": [
+        "自省",
+        "修身",
+        "笨功夫",
+        "长期主义"
+      ]
+    },
+    {
+      "person_id": "ding-yuanying",
+      "person_name": "丁元英",
+      "count": 3,
+      "target_material_count": 3,
+      "gap": 0,
+      "themes": [
+        "结构思维",
+        "去幻觉",
+        "规律感",
+        "约束识别"
+      ]
+    },
+    {
+      "person_id": "mei-changsu",
+      "person_name": "梅长苏",
+      "count": 3,
+      "target_material_count": 3,
+      "gap": 0,
+      "themes": [
+        "全局推演",
+        "次序感",
+        "代价意识",
+        "克制"
+      ]
+    },
+    {
+      "person_id": "juror-8",
+      "person_name": "8号陪审员",
+      "count": 3,
+      "target_material_count": 3,
+      "gap": 0,
+      "themes": [
+        "证据意识",
+        "独立判断",
+        "慢结论",
+        "提问能力"
+      ]
+    },
+    {
+      "person_id": "inamori-kazuo",
+      "person_name": "稻盛和夫",
+      "count": 3,
+      "target_material_count": 3,
+      "gap": 0,
+      "themes": [
+        "做人准则",
+        "执行力",
+        "持续改进",
+        "经营判断"
+      ]
+    },
+    {
+      "person_id": "nan-rendong",
+      "person_name": "南仁东",
+      "count": 3,
+      "target_material_count": 3,
+      "gap": 0,
+      "themes": [
+        "长期主义",
+        "工程思维",
+        "耐心",
+        "校验意识"
+      ]
+    },
+    {
+      "person_id": "huang-xuhua",
+      "person_name": "黄旭华",
+      "count": 3,
+      "target_material_count": 3,
+      "gap": 0,
+      "themes": [
+        "担当",
+        "系统工程",
+        "隐忍",
+        "价值感"
+      ]
+    }
+  ]
+}

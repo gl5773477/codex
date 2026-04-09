@@ -1,0 +1,51 @@
+[
+  {
+    "person_id": "zeng-guofan",
+    "person_name": "曾国藩",
+    "target_material_count": 3,
+    "themes": ["自省", "修身", "笨功夫", "长期主义"],
+    "canonical_works": ["曾国藩家书", "日课脉络"]
+  },
+  {
+    "person_id": "ding-yuanying",
+    "person_name": "丁元英",
+    "target_material_count": 3,
+    "themes": ["结构思维", "去幻觉", "规律感", "约束识别"],
+    "canonical_works": ["《天道》角色主线"]
+  },
+  {
+    "person_id": "mei-changsu",
+    "person_name": "梅长苏",
+    "target_material_count": 3,
+    "themes": ["全局推演", "次序感", "代价意识", "克制"],
+    "canonical_works": ["《琅琊榜》角色主线"]
+  },
+  {
+    "person_id": "juror-8",
+    "person_name": "8号陪审员",
+    "target_material_count": 3,
+    "themes": ["证据意识", "独立判断", "慢结论", "提问能力"],
+    "canonical_works": ["《十二怒汉》"]
+  },
+  {
+    "person_id": "inamori-kazuo",
+    "person_name": "稻盛和夫",
+    "target_material_count": 3,
+    "themes": ["做人准则", "执行力", "持续改进", "经营判断"],
+    "canonical_works": ["经营哲学脉络", "阿米巴经营脉络"]
+  },
+  {
+    "person_id": "nan-rendong",
+    "person_name": "南仁东",
+    "target_material_count": 3,
+    "themes": ["长期主义", "工程思维", "耐心", "校验意识"],
+    "canonical_works": ["FAST 主线"]
+  },
+  {
+    "person_id": "huang-xuhua",
+    "person_name": "黄旭华",
+    "target_material_count": 3,
+    "themes": ["担当", "系统工程", "隐忍", "价值感"],
+    "canonical_works": ["核潜艇研制主线"]
+  }
+]
